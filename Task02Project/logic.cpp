@@ -6,3 +6,15 @@
 // абсолютная величина которых меньше среднего арифметического всех элементов.
 // Далее необходимо разработать полноценный или тестовый проект для полной 
 // демонстрации работоспособности данной функции.
+#include "util.h"
+
+double average_elements(double array[], int size) {
+	double average = 0;
+	for (int index = 0; index < size; index++)
+	{
+		average += array[index];
+	}
+	average /= size;
+
+	return average;
+}
