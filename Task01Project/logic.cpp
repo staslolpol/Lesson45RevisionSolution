@@ -9,9 +9,13 @@
 int count_nonzero_elements(int array[DEFAULT_SIZE], int size) {
 	int count = 0;
 
+	if (size <= 0) {
+		return -1;
+	}
+
 	for (int index = 0; index < size; index++)
 	{
-		if (array[index] <= 0) {
+		if (array[index] > 0) {
 			count++;
 		}
 	}
